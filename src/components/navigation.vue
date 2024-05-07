@@ -3,8 +3,8 @@
         <nav class="container flex sm:flex-row md:items-center items-center gap-2 py-5 text-white">
             <RouterLink :to="{ name: 'home' }">
                 <div class="flex items-center gap-5 flex-1">
-                    <i class="fa-solid fa-sun text-2xl"></i>
-                    <p class="text-2x">Weather App</p>
+                    <i class="fa-solid fa-sun md:text-2xl"></i>
+                    <p class="text-sm md:text-xl">Weather App</p>
                 </div>
             </RouterLink>
 
