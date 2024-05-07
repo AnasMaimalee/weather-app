@@ -17,19 +17,21 @@
             <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
                 <div class="text-black">
                     <p class="md:text-2xl">About:</p>
-                    <p class="mt-4 md:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, eligendi
+                    <p class="text-xs mt-4 md:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                        eligendi
                         repellendus? Temporibus,
                         esse!</p>
 
                     <p class="md:text-2xl mt-4 text-bold">How It Works</p>
-                    <ul class="mt-4">
+                    <ul class="mt-4 text-xs">
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                     </ul>
 
-                    <p class="mt-4 mb-4">Removing a City</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, exercitationem eaque numquam
+                    <p class=" mt-4 mb-4 text-justify">Removing a City</p>
+                    <p class="text-xs md:text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
+                        exercitationem eaque numquam
                         dolorum quisquam doloremque dolore. Neque fugiat quidem ipsam!</p>
                 </div>
             </BaseModal>

@@ -709,6 +709,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-end {
   text-align: end;
 }
@@ -726,6 +730,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-black {
@@ -763,6 +772,11 @@ video {
     line-height: 1.25rem;
   }
 
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .sm\:text-red-300 {
     --tw-text-opacity: 1;
     color: rgb(252 165 165 / var(--tw-text-opacity));
@@ -784,7 +798,22 @@ video {
     line-height: 1.75rem;
   }
 
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .md\:italic {
     font-style: italic;
+  }
+
+  .md\:text-red-100 {
+    --tw-text-opacity: 1;
+    color: rgb(254 226 226 / var(--tw-text-opacity));
+  }
+
+  .md\:text-red-600 {
+    --tw-text-opacity: 1;
+    color: rgb(220 38 38 / var(--tw-text-opacity));
   }
 }
