@@ -16,7 +16,21 @@
 
             <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
                 <div class="text-black">
-                    Hell
+                    <p class="md:text-2xl">About:</p>
+                    <p class="mt-4 md:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, eligendi
+                        repellendus? Temporibus,
+                        esse!</p>
+
+                    <p class="md:text-2xl mt-4 text-bold">How It Works</p>
+                    <ul class="mt-4">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+
+                    <p class="mt-4 mb-4">Removing a City</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, exercitationem eaque numquam
+                        dolorum quisquam doloremque dolore. Neque fugiat quidem ipsam!</p>
                 </div>
             </BaseModal>
         </nav>
