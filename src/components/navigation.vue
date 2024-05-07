@@ -4,7 +4,7 @@
             <RouterLink :to="{ name: 'home' }">
                 <div class="flex items-center gap-5 flex-1">
                     <i class="fa-solid fa-sun text-2xl"></i>
-                    <p class="text-2xl  sm:text-sm md:text-2xl md:italic">Weather App</p>
+                    <p class="text-2x">Weather App</p>
                 </div>
             </RouterLink>
 
