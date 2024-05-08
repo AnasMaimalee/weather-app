@@ -863,6 +863,11 @@ video {
     line-height: 1.25rem;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:italic {
     font-style: italic;
   }

@@ -4,11 +4,12 @@
             <input v-model="searchQuery" type="text" @input="getSearchResults" placeholder="Search a City or State"
                 class="py-2 px-1 w-full bg-transparent border-b focus:border-secondary focus:outline-none focus:shadow-[0px_1px_0_0_#004EE7]" />
 
-            <ul class="absolute bg-secondary text-wrap w-full shadow-md py-2 px-1 top-[66px]">
+            <ul class="absolute bg-secondary text-wrap w-full shadow-md py-2 px-1 top-[66px]" v-if="mapboxSearcResults">
                 <li v-for="searchResult in mapboxSearcResults" :key="searchResult.id" class="py-2 cursor-pointer">
                     {{ searchResult.place_name }}
                 </li>
             </ul>
+            <div class="" v-else></div>
         </div>
     </main>
 </template>
