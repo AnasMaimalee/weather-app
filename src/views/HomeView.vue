@@ -5,11 +5,19 @@
                 class="py-2 px-1 w-full bg-transparent border-b focus:border-secondary focus:outline-none focus:shadow-[0px_1px_0_0_#004EE7]" />
 
             <ul class="absolute bg-secondary text-wrap w-full shadow-md py-2 px-1 top-[66px]" v-if="mapboxSearcResults">
-                <li v-for="searchResult in mapboxSearcResults" :key="searchResult.id" class="py-2 cursor-pointer">
-                    {{ searchResult.place_name }}
-                </li>
+                <p v-if="searchError">
+                    Sorry, something went wrong, pls try again!
+                </p>
+                <p v-if="!serverError && mapboxSearcResults.length === 0">
+                    No result for your query, try again next.
+                </p>
+                <template v-else>
+                    <li v-for="searchResult in mapboxSearcResults" :key="searchResult.id" class="py-2 cursor-pointer">
+                        {{ searchResult.place_name }}
+                    </li>
+                </template>
             </ul>
-            <div class="" v-else></div>
+
         </div>
     </main>
 </template>
@@ -22,6 +30,7 @@ const queryTimeout = ref(null)
 const searchQuery = ref("")
 const access_token = "pk.eyJ1IjoibWFpbWFsZWUiLCJhIjoiY2x2eDBpejF2MG5uOTJqb2c3emp3emJtbyJ9.A8yoif0XGvMssyOE0udqDg"
 const mapboxSearcResults = ref(null)
+const searchError = ref(null)
 
 const getSearchResults = function () {
     clearTimeout(queryTimeout.value)
@@ -31,8 +40,8 @@ const getSearchResults = function () {
                 const result = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${searchQuery.value}.json?access_token=${access_token}`);
                 mapboxSearcResults.value = result.data.features
                 console.log(mapboxSearcResults.value, "rsults")
-            } catch (error) {
-                console.error("Error fetching search results:", error)
+            } catch {
+                searchError.value = true
             }
         } else {
             mapboxSearcResults.value = null

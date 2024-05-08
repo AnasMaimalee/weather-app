@@ -7,7 +7,6 @@
                     <p class="text-sm md:text-xl">Maimalee Weather App</p>
                 </div>
             </RouterLink>
-
             <div class="flex gap-5 flex-1 justify-end">
                 <i class="fa-solid fa-circle-info text-xl hover:text-secondary duration-150 cursor-pointer"
                     @click="toggleModal"></i>
