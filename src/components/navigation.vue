@@ -1,7 +1,7 @@
 <template>
     <header class="sticky top-0 bg-primary shadow-lg">
         <nav class="container flex sm:flex-row md:items-center items-center gap-2 py-5 text-white">
-            <RouterLink :to="{ name: 'home' }">
+            <RouterLink :to="{ name: 'Home' }">
                 <div class="flex items-center gap-5 flex-1">
                     <i class="fa-solid fa-sun md:text-2xl"></i>
                     <p class="text-sm md:text-xl">Maimalee Weather App</p>
