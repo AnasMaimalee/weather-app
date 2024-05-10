@@ -31,7 +31,7 @@ const router = useRouter()
 
 
 const previewCity = (searchResult) => {
-    console.log(searchResult)
+    // console.log(searchResult)
     const [city, state] = searchResult.place_name.split(',')
     router.push({
         name: "CityView",
@@ -57,7 +57,7 @@ const getSearchResults = function () {
             try {
                 const result = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${searchQuery.value}.json?access_token=${access_token}`);
                 mapboxSearcResults.value = result.data.features
-                console.log(mapboxSearcResults.value, "rsults")
+                // console.log(mapboxSearcResults.value, "rsults")
             } catch {
                 searchError.value = true
             }
