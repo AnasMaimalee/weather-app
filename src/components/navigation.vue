@@ -28,7 +28,7 @@
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                     </ul>
 
-                    <p class=" mt-4 mb-4 md:text-2xl text-justify">Removing a City</p>
+                    <p class=" mt-4 mb-4 md:text-2xl flex text-justify">Removing a City</p>
                     <p class="text-xs md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
                         exercitationem eaque numquam
                         dolorum quisquam doloremque dolore. Neque fugiat quidem ipsam!</p>
